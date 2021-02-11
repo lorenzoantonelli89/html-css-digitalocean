@@ -1,0 +1,57 @@
+/* regole generali */
+
+/* regole debug */
+[class*="col-"]{
+  background-color: red;
+  border: 1px solid black;
+  min-height: 200px;
+}
+
+/* mediaquery  */
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+
+    .navbar-header{
+      width: 100%;
+    }
+
+    .navbar-toggle{
+      display: block;
+      margin-right: 0;
+    }
+}
+
+@media all and (max-width: 992px){
+  header>nav a{
+    width: 20%;
+  }
+}
+
+@media all and (min-width: 993px){
+  .navbar-header{
+    width: 20%;
+  }
+}
+
+/* regole header */
+header>.navbar-default{
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+}
+
+header>nav a>img{
+  max-height: 100%;
+}
+
+header>nav a>i{
+  padding-left: 5px;
+}
+
+#signup{
+  border: 1px solid black;
+  padding: 5px;
+}
