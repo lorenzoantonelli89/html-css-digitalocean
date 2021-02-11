@@ -4,14 +4,30 @@
   background-color: #f3f5f9;
 }
 
+.bluegrad{
+  background: linear-gradient(#0046c4,
+  #0034b1, #00209c);
+}
+
 .textcenter{
   text-align: center;
 }
 
+.textwhite{
+  color: #fff;
+}
+
+.textgrey{
+  color: #9ca5b6;
+}
+
+.textverdeacqua{
+  color: #00d1d0;
+}
+
 /* regole debug */
 [class*="col-"]{
-  border: 1px solid black;
-  min-height: 400px;
+  /* min-height: 400px; */
 }
 
 /* mediaquery  */
@@ -43,11 +59,7 @@
   }
 }
 
-@media all and (max-widht: 767px){
-  section.grey li{
-    width: calc(100% / 2)
-  }
-}
+
 
 /* regole header */
 header>.navbar-default{
@@ -117,6 +129,13 @@ section.grey li{
   width: calc(100% / 7)
 }
 
+@media all and (max-width: 767px){
+  section.grey li{
+    width: calc(100% / 3);
+    padding-right: 20px;
+  }
+}
+
 section.grey img{
   width: 100%;
   vertical-align: middle;
@@ -132,4 +151,54 @@ section.grey img{
   color: #78829c;
   padding-bottom: 30px;
   padding-left: 10px;
+}
+
+/* immagine carosel */
+
+.carousel-control{
+  width: 0;
+  color: #031c4e;
+}
+
+.carousel-control.left{
+  position: absolute;
+  left: -50px;
+}
+
+.carousel-control.right{
+  position: absolute;
+  right: -50px;
+}
+
+.carousel-indicators{
+  position: absolute;
+}
+
+.carousel-indicators .active{
+  color: #000;
+}
+
+/* sezione table */
+.table.table-hover .noline{
+  border: none;
+}
+
+.table-hover > tbody > tr:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.textverdeacqua{
+  padding-left: 115px;
+}
+
+.textverdeacqua>i{
+  padding-left: 10px;
+}
+/* footer */
+footer{
+  background-color: #031c4e;
+}
+
+footer ul{
+  list-style-type: none;
 }
