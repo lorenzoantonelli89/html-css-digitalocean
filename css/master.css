@@ -1,10 +1,17 @@
 /* regole generali */
 
+.grey{
+  background-color: #f3f5f9;
+}
+
+.textcenter{
+  text-align: center;
+}
+
 /* regole debug */
 [class*="col-"]{
-  background-color: red;
   border: 1px solid black;
-  min-height: 200px;
+  min-height: 400px;
 }
 
 /* mediaquery  */
@@ -53,5 +60,47 @@ header>nav a>i{
 
 #signup{
   border: 1px solid black;
-  padding: 5px;
+}
+
+/* regole jumbotron */
+.ms_jumbotron{
+  background-image: url("../img/jumbo.svg");
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.ms_contentform{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.list-group-item{
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 1px #f3f5f9;
+}
+
+.list-group-item:first-child{
+  background-color: #579aff;
+  margin-bottom: 10px;
+
+}
+
+.ms_contentform img{
+  height: 25px;
+}
+
+.ms_contentform p{
+  padding-top: 5px;
+}
+
+/* regole main */
+/* sezione loghi */
+
+section.grey img{
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
 }
