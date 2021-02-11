@@ -1,4 +1,7 @@
 /* regole generali */
+body{
+  font-family: 'Inter', sans-serif;
+}
 
 .grey{
   background-color: #f3f5f9;
@@ -7,6 +10,11 @@
 .bluegrad{
   background: linear-gradient(#0046c4,
   #0034b1, #00209c);
+}
+
+section, footer{
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 .textcenter{
@@ -25,9 +33,12 @@
   color: #00d1d0;
 }
 
-/* regole debug */
-[class*="col-"]{
-  /* min-height: 400px; */
+.textbluacceso{
+  color: #227dfe;
+}
+
+.textdarkblu{
+  color: #031c4e;
 }
 
 /* mediaquery  */
@@ -45,6 +56,7 @@
       display: block;
       margin-right: 0;
     }
+
 }
 
 @media all and (max-width: 992px){
@@ -58,7 +70,6 @@
     width: 20%;
   }
 }
-
 
 
 /* regole header */
@@ -76,6 +87,10 @@ header>nav a>i{
   padding-left: 5px;
 }
 
+.navbar-default .navbar-nav > li > a{
+  color: #031c4e;
+}
+
 #signup{
   border: 1px solid #6fabff;
   color: #6fabff;
@@ -87,6 +102,15 @@ header>nav a>i{
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.ms_jumbotron h1{
+  font-size: 55px;
+}
+
+.ms_jumbotron p{
+  font-size: 23px;
+  font-weight: 300;
 }
 
 .ms_contentform{
@@ -124,7 +148,13 @@ header>nav a>i{
 
 /* regole main */
 /* sezione loghi */
-section.grey li{
+section.loghi h4{
+  color: #808ba4;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+section.loghi li{
   display: inline-block;
   width: calc(100% / 7)
 }
@@ -141,7 +171,17 @@ section.grey img{
   vertical-align: middle;
 }
 
+section.loghi a{
+  display: block;
+  padding-top: 30px;
+}
+
 /* sezione deploy */
+#sectiondeploy p{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 #deploy{
   list-style-type: none;
 }
@@ -153,11 +193,39 @@ section.grey img{
   padding-left: 10px;
 }
 
+#sectiondeploy h4{
+  padding-top: 10px;
+}
+
+.visible-sm-block{
+  display: block;
+}
+
+/* sezione designed developers */
+section.designed h2{
+  padding-bottom: 40px;
+}
+
+section.designed p{
+  padding-bottom: 40px;
+}
+
 /* immagine carosel */
+.carousel-example-generic{
+  padding-bottom: 70px;
+}
+
+@media all and (max-width: 768px){
+  .carousel-control{
+    display: none;
+  }
+}
 
 .carousel-control{
   width: 0;
   color: #031c4e;
+  position: absolute;
+  bottom: 20%;
 }
 
 .carousel-control.left{
@@ -175,7 +243,21 @@ section.grey img{
 }
 
 .carousel-indicators .active{
-  color: #000;
+  background-color: #006aff;
+}
+
+.carousel-indicators li{
+  border: 1px solid #006aff;
+  background-color: #fff;
+}
+
+.carousel-example-generic h4{
+  padding-top: 20px;
+}
+
+/* sezione business */
+#sectionbusiness h2{
+  padding-bottom: 40px;
 }
 
 /* sezione table */
@@ -194,9 +276,31 @@ section.grey img{
 .textverdeacqua>i{
   padding-left: 10px;
 }
+
+/* sezione development digital */
+section.devdigital h2{
+  padding-bottom: 60px;
+}
+
+/* sezione get started */
+section.getstarted h2{
+  padding-bottom: 50px;
+}
+
+section.getstarted .btn.btn-default{
+  color: #227dfe;
+  border: none;
+}
+
 /* footer */
 footer{
   background-color: #031c4e;
+}
+
+.social i{
+  font-size: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 footer ul{

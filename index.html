@@ -2,6 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <!-- lib fontawsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- Latest compiled and minified CSS -->
@@ -92,8 +95,8 @@
           </div>
           <div class="col-xs-12 col-sm-6">
             <div class="ms_contentform textcenter">
-              <h2>Deploy your app in second.</h2>
-              <h2><a href="#">Get started now.</a></h2>
+              <h2 class="textdarkblu">Deploy your app in second.</h2>
+              <h2><a class="textbluacceso" href="#">Get started now.</a></h2>
               <form>
                 <div class="form-group">
                   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -109,9 +112,9 @@
                   </a>
                 </div>
               </form>
-              <p>By signing up you agree to the <a href="#">Terms of Service
+              <span>By signing up you agree to the <a href="#">Terms of Service
               </a>
-              </p>
+            </span>
             </div>
 
 
@@ -126,7 +129,7 @@
     <!-- corpo pagina -->
     <main>
       <!-- sezione loghi -->
-      <section class="grey textcenter">
+      <section class="grey textcenter loghi">
         <div class="container">
           <div class="row">
             <!-- title loghi -->
@@ -147,7 +150,7 @@
 
             <!-- link loghi -->
             <div class="col-xs-12">
-              <a href="#">View customer stories <i class="fas fa-chevron-right"></i></a>
+              <a class="textbluacceso" href="#">View customer stories <i class="fas fa-chevron-right"></i></a>
             </div>
 
           </div>
@@ -157,51 +160,54 @@
       </section>
 
       <!-- sezione deploy -->
-      <section>
+      <section id="sectiondeploy">
         <!-- title deploy -->
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
               <div class="textcenter">
-                <h2>Deploy and scale seamlessly</h2>
-                <p>Our optimized configuration process saves your team time when running and scaling distributed application, Al & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+                <h2 class="textdarkblu">Deploy and scale seamlessly</h2>
+                <p class="textgrey">Our optimized configuration process saves your team time when running and scaling distributed application, Al & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
               </div>
             </div>
             <!-- deploy schema -->
-            <div class="col-xs-12 col-sm-3">
-              <ul id="deploy">
-                <li>Deploy</li>
-                <li>Manage</li>
-                <li>Secure</li>
-                <li>Scale</li>
-                <li>Monitor</li>
-              </ul>
-            </div>
-            <div class="col-xs-12 col-sm-9">
-              <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                  <img src="img/cluster-deploy.svg" alt="">
-                  <h4>Cluster deployments</h4>
-                  <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                  <img src="img/optimized-compute.svg" alt="">
-                  <h4>Optimized compute types</h4>
-                  <p>Get the compute resources you need with Standard or Optimized Droplets.</p>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                  <img src="img/one-click.svg" alt="">
-                  <h4>One-clicks apps</h4>
-                  <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                  <img src="img/global.svg" alt="">
-                  <h4>Global availability</h4>
-                  <p>Deploy to any of our data center regions around the world.</p>
-                </div>
-
+              <div class="col-xs-12 col-sm-3">
+                <ul id="deploy">
+                  <li>Deploy</li>
+                  <li>Manage</li>
+                  <li>Secure</li>
+                  <li>Scale</li>
+                  <li>Monitor</li>
+                </ul>
               </div>
-            </div>
+              <div class="col-xs-12 col-sm-9">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <img src="img/cluster-deploy.svg" alt="">
+                    <h4 class="textdarkblu">Cluster deployments</h4>
+                    <p class="textgrey">Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <img src="img/optimized-compute.svg" alt="">
+                    <h4 class="textdarkblu">Optimized compute types</h4>
+                    <p class="textgrey">Get the compute resources you need with Standard or Optimized Droplets.</p>
+                  </div>
+                  <div class="clearfix visible-sm-block">
+
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <img src="img/one-click.svg" alt="">
+                    <h4 class="textdarkblu">One-clicks apps</h4>
+                    <p class="textgrey">Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <img src="img/global.svg" alt="">
+                    <h4 class="textdarkblu">Global availability</h4>
+                    <p class="textgrey">Deploy to any of our data center regions around the world.</p>
+                  </div>
+
+                </div>
+              </div>
 
           </div>
 
@@ -210,20 +216,20 @@
       </section>
 
       <!-- sezione designed developers -->
-      <section class="grey">
+      <section class="grey designed">
         <div class="container">
           <!-- titolo design developers -->
           <div class="row">
             <div class="col-xs-12">
               <div class="textcenter">
-                <h2>Designed for developers</h2>
-                <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+                <h2 class="textdarkblu">Designed for developers</h2>
+                <p class="textgrey">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
               </div>
             </div>
             <!-- immagine scorrimento -->
             <div class="col-xs-12 col-sm-offset-2 col-sm-8">
 
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <div class="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                   <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -236,22 +242,22 @@
                   <div class="item active">
                     <img src="img/screenshot-create-droplet-12336b41.jpg" alt="...">
                     <div class="carousel-caption">
-                      ...
+
                     </div>
                   </div>
                   <div class="item">
-                    <img src="img/screenshot-create-droplet-12336b41.jpg" alt="...">
+                    <img src="img/imgmove.png" alt="...">
                     <div class="carousel-caption">
-                      ...
+
                     </div>
                   </div>
                   <div class="item">
-                    <img src="img/screenshot-create-droplet-12336b41.jpg" alt="...">
+                    <img src="img/imgmove2.png" alt="...">
                     <div class="carousel-caption">
-                      ...
+
                     </div>
                   </div>
-                  ...
+                  <h4 class="textcenter">Create compute servers in 55 second or less.</h4>
                 </div>
 
                 <!-- Controls -->
@@ -274,31 +280,31 @@
       </section>
 
       <!-- sezione business needs -->
-      <section>
+      <section id="sectionbusiness">
         <div class="container">
           <div class="row">
             <!-- titolo business -->
             <div class="col-xs-12">
-              <h2 class="textcenter">The features your business needs</h2>
+              <h2 class="textcenter textdarkblu">The features your business needs</h2>
             </div>
             <!-- immagini con testo -->
             <div class="col-xs-12 col-sm-4">
               <img src="img/pred-pricing.svg" alt="">
-              <h4>Predictable pricing</h4>
-              <p>Leave complex pricing structure behind. Always know what you'll pay for month with a flat, industry-leading pricing structure.</p>
-              <a href="#">Pricing<i class="fas fa-chevron-right"></i></a>
+              <h4 class="textdarkblu">Predictable pricing</h4>
+              <p class="textgrey">Leave complex pricing structure behind. Always know what you'll pay for month with a flat, industry-leading pricing structure.</p>
+              <a class="textbluacceso" href="#">Pricing<i class="fas fa-chevron-right"></i></a>
             </div>
             <div class="col-xs-12 col-sm-4">
               <img src="img/world-class.svg" alt="">
-              <h4>World-class service</h4>
-              <p>Free round-the-clock technical support for all customers. You'll feel the love.</p>
-              <a href="#">Support<i class="fas fa-chevron-right"></i></a>
+              <h4 class="textdarkblu">World-class service</h4>
+              <p class="textgrey">Free round-the-clock technical support for all customers. You'll feel the love.</p>
+              <a class="textbluacceso" href="#">Support<i class="fas fa-chevron-right"></i></a>
             </div>
             <div class="col-xs-12 col-sm-4">
               <img src="img/reliable-platform.svg" alt="">
-              <h4>Reliable platform</h4>
-              <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99,99% uptime SLA for alla service.</p>
-              <a href="#">Security<i class="fas fa-chevron-right"></i></a>
+              <h4 class="textdarkblu">Reliable platform</h4>
+              <p class="textgrey">More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99,99% uptime SLA for alla service.</p>
+              <a class="textbluacceso" href="#">Security<i class="fas fa-chevron-right"></i></a>
             </div>
 
           </div>
@@ -395,16 +401,16 @@
       </section>
 
       <!-- sezione developement digital ocean -->
-      <section class="grey">
+      <section class="grey devdigital">
         <div class="container">
           <div class="row">
             <!-- titolo dvelopment digital ocean -->
             <div class="col-xs-12">
-              <h2 class="textcenter">Development teams love DigitalOcean</h2>
+              <h2 class="textcenter textdarkblu">Development teams love DigitalOcean</h2>
             </div>
             <!-- immagine che cambia -->
-            <div class="col-xs-12">
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="col-xs-12 col-sm-offset-2 col-sm-8">
+              <div class="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                   <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -415,24 +421,24 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                   <div class="item active">
-                    <img src="img/screenshot-create-droplet-12336b41.jpg" alt="...">
+                    <img src="img/imgmove3.png" alt="...">
                     <div class="carousel-caption">
-                      ...
+
                     </div>
                   </div>
                   <div class="item">
-                    <img src="img/screenshot-create-droplet-12336b41.jpg" alt="...">
+                    <img src="img/imgmove4.png" alt="...">
                     <div class="carousel-caption">
-                      ...
+
                     </div>
                   </div>
                   <div class="item">
-                    <img src="img/screenshot-create-droplet-12336b41.jpg" alt="...">
+                    <img src="img/imgmove5.png" alt="...">
                     <div class="carousel-caption">
-                      ...
+
                     </div>
                   </div>
-                  ...
+
                 </div>
 
                 <!-- Controls -->
@@ -445,7 +451,7 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div>
-              
+
             </div>
 
           </div>
@@ -455,13 +461,13 @@
       </section>
 
       <!-- sezione started now -->
-      <section class="bluegrad">
+      <section class="bluegrad getstarted">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
               <div class="textcenter">
                 <h2 class="textwhite textcenter">Get started now.</h2>
-                <a class="btn btn-default" href="#" role="button">Create your account</a>
+                <a  class="btn btn-default" href="#" role="button">Create your account</a>
               </div>
             </div>
 
@@ -482,16 +488,17 @@
             <h4 class="textgrey">© 2018 DigitalOcean, LLC. All rights reserved.</h4>
             <span class="textgrey">Proudly made in NY</span>
             <div class="social">
-              <i class="fab fa-twitter textgrey"></i>
-              <i class="fab fa-facebook-square textgrey"></i>
-              <i class="fab fa-instagram textgrey"></i>
-              <i class="fab fa-youtube textgrey"></i>
-              <i class="fab fa-linkedin textgrey"></i>
+              <a href="#"><i class="fab fa-twitter textgrey"></i></a>
+              <a href="#"><i class="fab fa-facebook-square textgrey"></i></a>
+              <a href="#"><i class="fab fa-instagram textgrey"></i></a>
+              <a href="#"><i class="fab fa-youtube textgrey"></i></a>
+              <a href="#"><i class="fab fa-linkedin textgrey"></i></a>
             </div>
           </div>
           <div class="col-xs-12 col-sm-2">
-            <h4 class="textwhite">Company</h4>
+
             <ul>
+              <li><h4 class="textwhite">Company</h4></li>
               <li><a class="textgrey" href="#">About</a></li>
               <li><a class="textgrey" href="#">Leadership</a></li>
               <li><a class="textgrey" href="#">Link</a></li>
@@ -505,8 +512,8 @@
             </ul>
           </div>
           <div class="col-xs-12 col-sm-2">
-            <h4 class="textwhite">Products</h4>
             <ul>
+              <li><h4 class="textwhite">Products</h4></li>
               <li><a class="textgrey" href="#">Droplets</a></li>
               <li><a class="textgrey" href="#">Spaces</a></li>
               <li><a class="textgrey" href="#">Kubernetes</a></li>
@@ -521,8 +528,8 @@
             </ul>
           </div>
           <div class="col-xs-12 col-sm-2">
-            <h4 class="textwhite">Community</h4>
             <ul>
+              <li><h4 class="textwhite">Community</h4></li>
               <li><a class="textgrey" href="#">Tutorials</a></li>
               <li><a class="textgrey" href="#">Meetups</a></li>
               <li><a class="textgrey" href="#">Q&A</a></li>
@@ -536,8 +543,8 @@
             </ul>
           </div>
           <div class="col-xs-12 col-sm-2">
-            <h4 class="textwhite">Support</h4>
             <ul>
+              <li><h4 class="textwhite">Support</h4></li>
               <li><a class="textgrey" href="#">Contact support</a></li>
               <li><a class="textgrey" href="#">FAQ</a></li>
               <li><a class="textgrey" href="#">Network Status</a></li>
