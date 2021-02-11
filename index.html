@@ -6,9 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/master.css">
     <title>Digital Ocean</title>
   </head>
@@ -17,7 +15,7 @@
     <!-- inteastazione pagina -->
     <header class="navbar-fixed-top">
       <nav class="navbar navbar-default">
-        <div class="container-fluid">
+        <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -75,7 +73,7 @@
                 </ul>
               </li>
               <li><a href="#">Login</a></li>
-              <li><a href="#">Sign Up</a></li>
+              <a id="signup" type="button" class="btn btn-default navbar-btn">Sign Up</a>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -85,7 +83,7 @@
 
     <!-- jumbotron -->
     <div class="ms_jumbotron">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-6">
             <h1>The simplest cloud platform for developers & teams</h1>
@@ -129,34 +127,27 @@
     <main>
       <!-- sezione loghi -->
       <section class="grey textcenter">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <!-- title loghi -->
             <div class="col-xs-12">
               INNOVATIVE BUSINESS TRUST DIGITAL OCEAN
             </div>
             <!-- colonne loghi -->
-            <div class="col-xs-6 col-sm-2">
-              <img src="img/docker.svg" alt="">
+            <div class="col-xs-12">
+              <ul>
+                <li><img src="img/docker.svg" alt=""></li>
+                <li><img src="img/gitlab.svg" alt=""></li>
+                <li><img src="img/slack.svg" alt=""></li>
+                <li><img src="img/hashicorp.svg" alt=""></li>
+                <li><img src="img/hashicorp.svg" alt=""></li>
+                <li><img src="img/splunklogo.svg" alt=""></li>
+              </ul>
             </div>
-            <div class="col-xs-6 col-sm-2">
-              <img src="img/gitlab.svg" alt="">
-            </div>
-            <div class="col-xs-6 col-sm-2">
-              <img src="img/slack.svg" alt="">
-            </div>
-            <div class="col-xs-6 col-sm-2">
-              <img src="img/hashicorp.svg" alt="">
-            </div>
-            <div class="col-xs-6 col-sm-2">
-              <img src="img/hashicorp.svg" alt="">
-            </div>
-            <div class="col-xs-6 col-sm-2">
-              <img src="img/splunklogo.svg" alt="">
-            </div>
+
             <!-- link loghi -->
             <div class="col-xs-12">
-              link logo
+              <a href="#">View customer stories <i class="fas fa-chevron-right"></i></a>
             </div>
 
           </div>
@@ -168,28 +159,45 @@
       <!-- sezione deploy -->
       <section>
         <!-- title deploy -->
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              titolo deply
+              <div class="textcenter">
+                <h2>Deploy and scale seamlessly</h2>
+                <p>Our optimized configuration process saves your team time when running and scaling distributed application, Al & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+              </div>
             </div>
             <!-- deploy schema -->
             <div class="col-xs-12 col-sm-3">
-              lista deploy
+              <ul id="deploy">
+                <li>Deploy</li>
+                <li>Manage</li>
+                <li>Secure</li>
+                <li>Scale</li>
+                <li>Monitor</li>
+              </ul>
             </div>
             <div class="col-xs-12 col-sm-9">
               <div class="row">
                 <div class="col-xs-12 col-sm-6">
-                  immagine + testo
+                  <img src="img/cluster-deploy.svg" alt="">
+                  <h4>Cluster deployments</h4>
+                  <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                  immagine + testo
+                  <img src="img/optimized-compute.svg" alt="">
+                  <h4>Optimized compute types</h4>
+                  <p>Get the compute resources you need with Standard or Optimized Droplets.</p>
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                  immagine + testo
+                  <img src="img/one-click.svg" alt="">
+                  <h4>One-clicks apps</h4>
+                  <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                  immagine + testo
+                  <img src="img/global.svg" alt="">
+                  <h4>Global availability</h4>
+                  <p>Deploy to any of our data center regions around the world.</p>
                 </div>
 
               </div>
@@ -203,7 +211,7 @@
 
       <!-- sezione designed developers -->
       <section>
-        <div class="container-fluid">
+        <div class="container">
           <!-- titolo design developers -->
           <div class="row">
             <div class="col-xs-12">
@@ -222,7 +230,7 @@
 
       <!-- sezione business needs -->
       <section>
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <!-- titolo business -->
             <div class="col-xs-12">
@@ -247,7 +255,7 @@
 
       <!-- sezione 12 regioni -->
       <section>
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6">
               <table class="table table-hover">
@@ -326,7 +334,7 @@
 
       <!-- sezione developement digital ocean -->
       <section>
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <!-- titolo dvelopment digital ocean -->
             <div class="col-xs-12">
@@ -345,7 +353,7 @@
 
       <!-- sezione started now -->
       <section>
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <div class="col-xs-12">
               get starded + link button
@@ -361,7 +369,7 @@
 
     <!-- pie pagina -->
     <footer>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-4">
             logo + testo copyright
@@ -385,5 +393,9 @@
 
     </footer>
 
+    <!-- Latest compiled and minified JQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
