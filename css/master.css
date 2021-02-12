@@ -43,29 +43,43 @@ section, footer{
 
 /* mediaquery  */
 
-@media all and (min-width: 768px) and (max-width: 992px) {
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
 
-    .navbar-header{
-      width: 100%;
-    }
+  .navbar-header{
+    width: 100%;
+  }
 
-    .navbar-toggle{
-      display: block;
-      margin-right: 0;
-    }
+  .navbar-toggle{
+    display: block;
+    margin-right: 0;
+  }
+
+  .collapse.in{
+    display:block !important;
+  }
+
+  .navbar-btn{
+    padding: 6px 2px;
+  }
 
 }
 
-@media all and (max-width: 992px){
+@media all and (max-width: 991px){
   header>nav a{
     width: 20%;
   }
+
+  .navbar-header {
+    float: none;
+  }
+
+
 }
 
-@media all and (min-width: 993px){
+@media all and (min-width: 992px){
   .navbar-header{
     width: 20%;
   }
@@ -179,7 +193,6 @@ section.loghi a{
 /* sezione deploy */
 #sectiondeploy p{
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 #deploy{
@@ -197,8 +210,16 @@ section.loghi a{
   padding-top: 10px;
 }
 
-.visible-sm-block{
-  display: block;
+#sectiondeploy img{
+  padding-top: 20px;
+}
+
+#sectiondeploy .clearfix.visible-sm-block{
+  display: block !important;
+}
+
+.textcenter.deploy>p{
+  padding-bottom: 50px;
 }
 
 /* sezione designed developers */
@@ -215,9 +236,16 @@ section.designed p{
   padding-bottom: 70px;
 }
 
-@media all and (max-width: 768px){
+@media all and (max-width: 767px){
   .carousel-control{
     display: none;
+  }
+
+  .carousel-indicators li{
+    width: 10px !important;
+    height: 10px !important;
+    margin: 1px !important;
+    border-radius: 10px !important;
   }
 }
 
