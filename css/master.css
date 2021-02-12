@@ -241,6 +241,10 @@ section.designed p{
     display: none;
   }
 
+  section.grey li{
+    padding-right: 0;
+  }
+
   .carousel-indicators li{
     width: 10px !important;
     height: 10px !important;
@@ -258,12 +262,12 @@ section.designed p{
 
 .carousel-control.left{
   position: absolute;
-  left: -50px;
+  left: -5%;
 }
 
 .carousel-control.right{
   position: absolute;
-  right: -50px;
+  left: 105%;
 }
 
 .carousel-indicators{
@@ -298,11 +302,17 @@ section.designed p{
 }
 
 .textverdeacqua{
-  padding-left: 115px;
+  padding-left: 105px;
 }
 
 .textverdeacqua>i{
   padding-left: 10px;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px){
+  .textverdeacqua{
+    padding-left: 45%;
+  }
 }
 
 /* sezione development digital */
