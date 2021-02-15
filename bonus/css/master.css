@@ -230,8 +230,6 @@ section.loghi a{
   min-height: 200px;
   text-align: center;
 }
-
-
 /* sezione designed developers */
 section.designed h2{
   padding-bottom: 40px;
@@ -319,10 +317,6 @@ section.designed p{
 
 .linebt{
   border-bottom: 1px solid black;
-}
-
-.table-hover > tbody > tr:hover{
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .textverdeacqua{
