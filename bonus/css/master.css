@@ -219,6 +219,18 @@ section.loghi a{
 .textcenter.deploy>p{
   padding-bottom: 50px;
 }
+/* test deploy */
+#deployul{
+  list-style-type: none;
+  column-count: 2;
+  column-width: 250px;
+}
+
+.deployli{
+  min-height: 200px;
+  text-align: center;
+}
+
 
 /* sezione designed developers */
 section.designed h2{
@@ -290,9 +302,23 @@ section.designed p{
   padding-bottom: 40px;
 }
 
+#businessul{
+  list-style-type: none;
+  column-count: 3;
+}
+
 /* sezione table */
-.table.table-hover .noline{
-  border: none;
+#tableul{
+  list-style-type: none;
+  column-count: 2;
+}
+
+#tableul>li{
+  padding-bottom: 10px;
+}
+
+.linebt{
+  border-bottom: 1px solid black;
 }
 
 .table-hover > tbody > tr:hover{
@@ -308,6 +334,10 @@ section.designed p{
 }
 
 @media all and (min-width: 768px) and (max-width: 991px){
+  #tableul{
+    column-count: 1;
+  }
+
   .textverdeacqua{
     padding-left: 45%;
   }
